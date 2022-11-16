@@ -6,21 +6,9 @@
     "id": "xdsf78IH3_c7"
    },
    "source": [
-    "# SolasSimu1 Data\n",
+    "# Fairness Simulation Study\n",
     "\n",
     "This example notebook demonstrates how to use PiML in its low-code mode for testing fairness of machine learning models using the SolasSimu1 data. This is a simulated dataset, modified from the `Friedman #1` regression problem. The covariates used for modeling are `Segment`, `x1`, `x2`, ..., `x5`, the response `Label` is binary and it is a classification problem. The rest variables are demographic variables used for testing fairness. The data is contributed by [Solas-AI](https://github.com/SolasAI/solas-ai-disparity)."
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "metadata": {
-    "id": "wJ7N7REOtAgN"
-   },
-   "source": [
-    "## Stage 0: Install PiML package on Google Colab\n",
-    "\n",
-    "1. Run `!pip install piml` to install the latest version of PiML\n",
-    "2. In Colab, you'll need restart the runtime in order to use newly installed PiML version."
    ]
   },
   {
@@ -29,7 +17,7 @@
     "id": "4kcbghi53_dB"
    },
    "source": [
-    "## Stage 1: Initialize an experiment, Load and Prepare data <a name=\"expdata\"></a>"
+    "## Load and Prepare Data"
    ]
   },
   {
@@ -725,7 +713,7 @@
     "id": "Lu3mpYH33_dK"
    },
    "source": [
-    "## Stage 3. Fairness Testing via Solas-AI<a name=\"modelinterpret\"></a>"
+    "## Fairness Testing"
    ]
   },
   {
@@ -960,7 +948,20 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.8.8"
+   "version": "3.9.12"
+  },
+  "toc": {
+   "base_numbering": 1,
+   "nav_menu": {},
+   "number_sections": true,
+   "sideBar": true,
+   "skip_h1_title": false,
+   "title_cell": "Table of Contents",
+   "title_sidebar": "Contents",
+   "toc_cell": false,
+   "toc_position": {},
+   "toc_section_display": true,
+   "toc_window_display": false
   },
   "widgets": {
    "application/vnd.jupyter.widget-state+json": {

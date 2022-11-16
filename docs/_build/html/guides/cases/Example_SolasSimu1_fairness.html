@@ -4,7 +4,7 @@
 
   <meta charset="utf-8">
   <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<meta property="og:title" content="8.4. SolasSimu1 Data" />
+<meta property="og:title" content="8.4. Fairness Simulation Study" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="guides/cases/Example_SolasSimu1_fairness.html" />
 <meta property="og:description" content="This example notebook demonstrates how to use PiML in its low-code mode for testing fairness of machine learning models using the SolasSimu1 data. This is a simulated dataset, modified from the Fri..." />
@@ -122,10 +122,9 @@
           </div-->
               <div class="sk-sidebar-toc">
                 <ul>
-<li><a class="reference internal" href="#">8.4. SolasSimu1 Data</a><ul>
-<li><a class="reference internal" href="#Stage-0:-Install-PiML-package-on-Google-Colab">8.4.1. Stage 0: Install PiML package on Google Colab</a></li>
-<li><a class="reference internal" href="#Stage-1:-Initialize-an-experiment,-Load-and-Prepare-data">8.4.2. Stage 1: Initialize an experiment, Load and Prepare data</a></li>
-<li><a class="reference internal" href="#Stage-3.-Fairness-Testing-via-Solas-AI">8.4.3. Stage 3. Fairness Testing via Solas-AI</a></li>
+<li><a class="reference internal" href="#">8.4. Fairness Simulation Study</a><ul>
+<li><a class="reference internal" href="#Load-and-Prepare-Data">8.4.1. Load and Prepare Data</a></li>
+<li><a class="reference internal" href="#Fairness-Testing">8.4.2. Fairness Testing</a></li>
 </ul>
 </li>
 </ul>
@@ -393,19 +392,12 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<section id="SolasSimu1-Data">
-<h1><span class="section-number">8.4. </span>SolasSimu1 Data<a class="headerlink" href="#SolasSimu1-Data" title="Permalink to this heading">¶</a></h1>
+<section id="Fairness-Simulation-Study">
+<h1><span class="section-number">8.4. </span>Fairness Simulation Study<a class="headerlink" href="#Fairness-Simulation-Study" title="Permalink to this heading">¶</a></h1>
 <p>This example notebook demonstrates how to use PiML in its low-code mode for testing fairness of machine learning models using the SolasSimu1 data. This is a simulated dataset, modified from the <code class="docutils literal notranslate"><span class="pre">Friedman</span> <span class="pre">#1</span></code> regression problem. The covariates used for modeling are <code class="docutils literal notranslate"><span class="pre">Segment</span></code>, <code class="docutils literal notranslate"><span class="pre">x1</span></code>, <code class="docutils literal notranslate"><span class="pre">x2</span></code>, …, <code class="docutils literal notranslate"><span class="pre">x5</span></code>, the response <code class="docutils literal notranslate"><span class="pre">Label</span></code> is binary and it is a classification problem. The rest variables are demographic variables used for testing fairness. The data is contributed by
 <a class="reference external" href="https://github.com/SolasAI/solas-ai-disparity">Solas-AI</a>.</p>
-<section id="Stage-0:-Install-PiML-package-on-Google-Colab">
-<h2><span class="section-number">8.4.1. </span>Stage 0: Install PiML package on Google Colab<a class="headerlink" href="#Stage-0:-Install-PiML-package-on-Google-Colab" title="Permalink to this heading">¶</a></h2>
-<ol class="arabic simple">
-<li><p>Run <code class="docutils literal notranslate"><span class="pre">!pip</span> <span class="pre">install</span> <span class="pre">piml</span></code> to install the latest version of PiML</p></li>
-<li><p>In Colab, you’ll need restart the runtime in order to use newly installed PiML version.</p></li>
-</ol>
-</section>
-<section id="Stage-1:-Initialize-an-experiment,-Load-and-Prepare-data">
-<h2><span class="section-number">8.4.2. </span>Stage 1: Initialize an experiment, Load and Prepare data<a class="headerlink" href="#Stage-1:-Initialize-an-experiment,-Load-and-Prepare-data" title="Permalink to this heading">¶</a></h2>
+<section id="Load-and-Prepare-Data">
+<h2><span class="section-number">8.4.1. </span>Load and Prepare Data<a class="headerlink" href="#Load-and-Prepare-Data" title="Permalink to this heading">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
@@ -566,8 +558,8 @@ var element = document.currentScript.previousSibling.previousSibling;
 <script type="application/vnd.jupyter.widget-view+json">{"model_id": "e9ef1be34341472bbbbdabe98314a437", "version_major": 2, "version_minor": 0}</script></div>
 </div>
 </section>
-<section id="Stage-3.-Fairness-Testing-via-Solas-AI">
-<h2><span class="section-number">8.4.3. </span>Stage 3. Fairness Testing via Solas-AI<a class="headerlink" href="#Stage-3.-Fairness-Testing-via-Solas-AI" title="Permalink to this heading">¶</a></h2>
+<section id="Fairness-Testing">
+<h2><span class="section-number">8.4.2. </span>Fairness Testing<a class="headerlink" href="#Fairness-Testing" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>First select a registered model, say XGB2,</p></li>
 <li><p>Then In Group Setting Panel:</p>
