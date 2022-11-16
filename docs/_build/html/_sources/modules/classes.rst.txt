@@ -23,28 +23,29 @@ For reference on concepts repeated across the API.
 
    api.Experiment
 
+..
+    Comment off
+    :mod:`piml.models`: Built-in Models
+    =======================================================
 
-:mod:`piml.models`: Built-in Models
-=======================================================
+    .. automodule:: piml.models
+        :no-members:
+        :no-inherited-members:
 
-.. automodule:: piml.models
-    :no-members:
-    :no-inherited-members:
+    .. currentmodule:: piml
 
-.. currentmodule:: piml
+    .. autosummary::
+       :nosignatures:
+       :toctree: generated/
+       :template: class.rst
 
-.. autosummary::
-   :nosignatures:
-   :toctree: generated/
-   :template: class.rst
-
-   models.FIGSRegressor
-   models.FIGSClassifier
-   models.GAMINetRegressor
-   models.GAMINetClassifier
-   models.ReluDNNRegressor
-   models.ReluDNNClassifier
-   models.GLMRegressor
-   models.GLMClassifier
-   models.GAMRegressor
-   models.GAMClassifier
+       models.FIGSRegressor
+       models.FIGSClassifier
+       models.GAMINetRegressor
+       models.GAMINetClassifier
+       models.ReluDNNRegressor
+       models.ReluDNNClassifier
+       models.GLMRegressor
+       models.GLMClassifier
+       models.GAMRegressor
+       models.GAMClassifier
